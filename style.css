@@ -22,14 +22,10 @@ body {
 
     position: relative;
 
-    /* Prevent sideways scrolling on phones */
+   
     overflow-x: hidden;
 }
 
-
-/* ============================= */
-/* STICKERS                      */
-/* ============================= */
 
 .sticker {
     position: absolute;
@@ -66,10 +62,6 @@ body {
     object-fit: contain;
 }
 
-
-/* ============================= */
-/* HEADER                        */
-/* ============================= */
 
 header {
     background-color: rgba(255, 255, 255, 0.75);
@@ -108,10 +100,6 @@ header p {
 }
 
 
-/* ============================= */
-/* NAVIGATION                    */
-/* ============================= */
-
 nav {
     background-color: rgba(255, 255, 255, 0.75);
 
@@ -144,10 +132,6 @@ nav a:hover {
 }
 
 
-/* ============================= */
-/* MAIN                          */
-/* ============================= */
-
 main {
     width: 80%;
     max-width: 800px;
@@ -159,9 +143,6 @@ main {
 }
 
 
-/* ============================= */
-/* SECTIONS                      */
-/* ============================= */
 
 section {
     background-color: rgba(255, 255, 255, 0.75);
@@ -181,10 +162,6 @@ section h2 {
     margin-bottom: 20px;
 }
 
-
-/* ============================= */
-/* PERSON                        */
-/* ============================= */
 
 .person {
     background-color: rgba(220, 233, 247, 0.75);
@@ -209,11 +186,6 @@ section h2 {
     margin: 12px;
 }
 
-
-/* ============================= */
-/* PROFILE PICTURES              */
-/* ============================= */
-
 .profile-picture {
     width: 160px;
     height: 160px;
@@ -228,10 +200,6 @@ section h2 {
     padding: 5px;
 }
 
-
-/* ============================= */
-/* HOBBIES                       */
-/* ============================= */
 
 .hobby-list {
     display: flex;
@@ -278,10 +246,6 @@ section h2 {
 }
 
 
-/* ============================= */
-/* MESSAGE BOX                   */
-/* ============================= */
-
 .message-box {
     background-color: rgba(255, 255, 255, 0.75);
 
@@ -300,11 +264,6 @@ section h2 {
 .message-box h2 {
     color: #0b2d5c;
 }
-
-
-/* ============================= */
-/* FOOTER                        */
-/* ============================= */
 
 footer {
     background-color: rgba(255, 255, 255, 0.3);
@@ -332,11 +291,6 @@ footer a {
     color: #0b2d5c;
     font-weight: bold;
 }
-
-
-/* ================================================= */
-/* TABLET                                          */
-/* ================================================= */
 
 @media (max-width: 900px) {
 
@@ -373,13 +327,8 @@ footer a {
 }
 
 
-/* ================================================= */
-/* MOBILE - iOS & ANDROID                          */
-/* ================================================= */
-
 @media (max-width: 600px) {
 
-    /* Prevent horizontal scrolling */
     html,
     body {
         width: 100%;
@@ -387,18 +336,10 @@ footer a {
     }
 
 
-    /* ----------------------------- */
-    /* HIDE LARGE DESKTOP STICKERS   */
-    /* ----------------------------- */
-
     .sticker {
         display: none;
     }
 
-
-    /* ----------------------------- */
-    /* HEADER                        */
-    /* ----------------------------- */
 
     header {
         width: calc(100% - 30px);
@@ -432,10 +373,6 @@ footer a {
     }
 
 
-    /* ----------------------------- */
-    /* NAVIGATION                    */
-    /* ----------------------------- */
-
     nav {
         width: calc(100% - 30px);
 
@@ -457,9 +394,6 @@ footer a {
     }
 
 
-    /* ----------------------------- */
-    /* MAIN                          */
-    /* ----------------------------- */
 
     main {
         width: calc(100% - 20px);
@@ -467,10 +401,6 @@ footer a {
         max-width: none;
     }
 
-
-    /* ----------------------------- */
-    /* SECTIONS                      */
-    /* ----------------------------- */
 
     section {
         margin: 20px 0;
@@ -499,11 +429,6 @@ footer a {
         padding: 0 8px;
     }
 
-
-    /* ----------------------------- */
-    /* PERSON CARDS                  */
-    /* ----------------------------- */
-
     .person {
         margin: 18px 0;
 
@@ -531,10 +456,6 @@ footer a {
     }
 
 
-    /* ----------------------------- */
-    /* PROFILE PICTURES              */
-    /* ----------------------------- */
-
     .profile-picture {
         width: 125px;
         height: 125px;
@@ -544,10 +465,6 @@ footer a {
         padding: 4px;
     }
 
-
-    /* ----------------------------- */
-    /* HOBBIES                       */
-    /* ----------------------------- */
 
     .hobby-list {
         flex-direction: column;
@@ -584,11 +501,6 @@ footer a {
         height: 75px;
     }
 
-
-    /* ----------------------------- */
-    /* MESSAGE BOX                   */
-    /* ----------------------------- */
-
     .message-box {
         width: calc(100% - 10px);
 
@@ -610,11 +522,6 @@ footer a {
     .message-box p {
         font-size: 14px;
     }
-
-
-    /* ----------------------------- */
-    /* FOOTER                        */
-    /* ----------------------------- */
 
     footer {
         width: calc(100% - 30px);
@@ -645,12 +552,6 @@ footer a {
     }
 }
 
-
-/* ================================================= */
-/* SMALL PHONES                                    */
-/* iPhone SE / small Android phones                */
-/* ================================================= */
-
 @media screen and (max-width: 600px) {
 
     body {
@@ -661,14 +562,12 @@ footer a {
         font-size: 14px;
     }
 
-    /* Hide side decorations on phones */
     .sticker1,
     .sticker2,
     .sticker3 {
         display: none;
     }
 
-    /* HEADER */
     header {
         width: 90%;
         margin: 15px auto;
@@ -692,7 +591,6 @@ footer a {
         height: 55px;
     }
 
-    /* NAVIGATION */
     nav {
         width: 88%;
         margin: 15px auto;
@@ -706,13 +604,12 @@ footer a {
         margin: 5px;
     }
 
-    /* MAIN */
     main {
         width: 94%;
         margin: auto;
     }
 
-    /* SECTIONS */
+    
     section {
         width: 100%;
         margin: 20px 0;
@@ -730,7 +627,6 @@ footer a {
         font-size: 14px;
     }
 
-    /* PERSON */
     .person {
         width: 100%;
         margin: 18px 0;
@@ -748,14 +644,12 @@ footer a {
         margin: 10px 3px;
     }
 
-    /* PROFILE IMAGE */
     .profile-picture {
         width: 120px;
         height: 120px;
         border-width: 4px;
     }
 
-    /* HOBBIES */
     .hobby-list {
         display: block;
     }
@@ -781,7 +675,6 @@ footer a {
         height: 75px;
     }
 
-    /* MESSAGE */
     .message-box {
         width: 90%;
         margin: 25px auto;
@@ -797,7 +690,6 @@ footer a {
         font-size: 14px;
     }
 
-    /* FOOTER */
     footer {
         width: 90%;
         margin: 25px auto 15px;
