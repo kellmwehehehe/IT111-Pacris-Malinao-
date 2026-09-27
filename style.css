@@ -1,0 +1,817 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-image: url("backgg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #102a43;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    text-align: center;
+
+    position: relative;
+
+    /* Prevent sideways scrolling on phones */
+    overflow-x: hidden;
+}
+
+
+/* ============================= */
+/* STICKERS                      */
+/* ============================= */
+
+.sticker {
+    position: absolute;
+    z-index: 1;
+}
+
+.sticker1 {
+    top: 400px;
+    left: 2%;
+
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
+}
+
+.sticker2 {
+    top: 550px;
+    right: 2%;
+
+    width: 300px;
+    height: 150px;
+
+    object-fit: fill;
+}
+
+.sticker3 {
+    top: 950px;
+    left: 2%;
+
+    width: 220px;
+    height: 220px;
+
+    object-fit: contain;
+}
+
+
+/* ============================= */
+/* HEADER                        */
+/* ============================= */
+
+header {
+    background-color: rgba(255, 255, 255, 0.75);
+
+    border: 3px solid #0b2d5c;
+
+    margin: 30px auto;
+    padding: 20px 40px;
+
+    width: 75%;
+    max-width: 800px;
+
+    border-radius: 100px;
+
+    box-shadow: 4px 4px 0px #6b8db5;
+
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    color: #0b2d5c;
+    margin: 10px;
+}
+
+header p {
+    margin: 5px;
+}
+
+.header-decoration {
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+
+/* ============================= */
+/* NAVIGATION                    */
+/* ============================= */
+
+nav {
+    background-color: rgba(255, 255, 255, 0.75);
+
+    border: 3px solid #0b2d5c;
+    border-radius: 50px;
+
+    width: 70%;
+
+    margin: 20px auto;
+    padding: 12px;
+
+    box-shadow: 3px 3px 0px #6b8db5;
+
+    position: relative;
+    z-index: 2;
+}
+
+nav a {
+    color: #0b2d5c;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    margin: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #174a7e;
+}
+
+
+/* ============================= */
+/* MAIN                          */
+/* ============================= */
+
+main {
+    width: 80%;
+    max-width: 800px;
+
+    margin: auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ============================= */
+/* SECTIONS                      */
+/* ============================= */
+
+section {
+    background-color: rgba(255, 255, 255, 0.75);
+
+    border: 3px solid #0b2d5c;
+
+    margin: 35px 0;
+    padding: 30px;
+
+    border-radius: 60px;
+
+    box-shadow: 5px 5px 0px #112944;
+}
+
+section h2 {
+    color: #0b2d5c;
+    margin-bottom: 20px;
+}
+
+
+/* ============================= */
+/* PERSON                        */
+/* ============================= */
+
+.person {
+    background-color: rgba(220, 233, 247, 0.75);
+
+    border: 2px solid #6b8db5;
+
+    margin: 25px 0;
+    padding: 25px;
+
+    border-radius: 50px;
+
+    box-shadow: 3px 3px 0px #091b31;
+}
+
+.person h3 {
+    color: #0b2d5c;
+    font-size: 22px;
+}
+
+.person p {
+    line-height: 1.7;
+    margin: 12px;
+}
+
+
+/* ============================= */
+/* PROFILE PICTURES              */
+/* ============================= */
+
+.profile-picture {
+    width: 160px;
+    height: 160px;
+
+    object-fit: cover;
+
+    border: 5px solid #0b2d5c;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+    padding: 5px;
+}
+
+
+/* ============================= */
+/* HOBBIES                       */
+/* ============================= */
+
+.hobby-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 20px;
+}
+
+.hobby {
+    width: 280px;
+
+    background-color: rgba(220, 233, 247, 0.75);
+
+    border: 2px solid #6b8db5;
+
+    padding: 20px;
+
+    border-radius: 50px;
+
+    box-shadow: 3px 3px 0px #b7c9df;
+}
+
+.hobby h3 {
+    color: #0b2d5c;
+    margin-top: 5px;
+}
+
+.hobby ul {
+    text-align: left;
+    line-height: 2;
+}
+
+.hobby-image {
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+
+    margin-top: 10px;
+}
+
+
+/* ============================= */
+/* MESSAGE BOX                   */
+/* ============================= */
+
+.message-box {
+    background-color: rgba(255, 255, 255, 0.75);
+
+    border: 3px dashed #0b2d5c;
+
+    border-radius: 70px;
+
+    width: 70%;
+
+    margin: 40px auto;
+    padding: 25px;
+
+    box-shadow: 4px 4px 0px #6b8db5;
+}
+
+.message-box h2 {
+    color: #0b2d5c;
+}
+
+
+/* ============================= */
+/* FOOTER                        */
+/* ============================= */
+
+footer {
+    background-color: rgba(255, 255, 255, 0.3);
+
+    border: 3px solid #0b2d5c;
+
+    border-radius: 60px;
+
+    width: 70%;
+
+    margin: 40px auto 20px;
+
+    padding: 20px;
+
+    color: #0b2d5c;
+
+    box-shadow: 4px 4px 0px #6b8db5;
+}
+
+footer p {
+    margin: 8px;
+}
+
+footer a {
+    color: #0b2d5c;
+    font-weight: bold;
+}
+
+
+/* ================================================= */
+/* TABLET                                          */
+/* ================================================= */
+
+@media (max-width: 900px) {
+
+    header {
+        width: 85%;
+    }
+
+    nav {
+        width: 85%;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    .sticker1 {
+        width: 130px;
+        height: 130px;
+    }
+
+    .sticker2 {
+        width: 220px;
+        height: 110px;
+    }
+
+    .sticker3 {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+
+/* ================================================= */
+/* MOBILE - iOS & ANDROID                          */
+/* ================================================= */
+
+@media (max-width: 600px) {
+
+    /* Prevent horizontal scrolling */
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* ----------------------------- */
+    /* HIDE LARGE DESKTOP STICKERS   */
+    /* ----------------------------- */
+
+    .sticker {
+        display: none;
+    }
+
+
+    /* ----------------------------- */
+    /* HEADER                        */
+    /* ----------------------------- */
+
+    header {
+        width: calc(100% - 30px);
+
+        margin: 15px auto;
+
+        padding: 18px 15px;
+
+        border-width: 2px;
+
+        border-radius: 35px;
+
+        box-shadow: 3px 3px 0px #6b8db5;
+    }
+
+    header h1 {
+        font-size: 25px;
+
+        margin: 8px 0;
+
+        line-height: 1.2;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .header-decoration {
+        width: 55px;
+        height: 55px;
+    }
+
+
+    /* ----------------------------- */
+    /* NAVIGATION                    */
+    /* ----------------------------- */
+
+    nav {
+        width: calc(100% - 30px);
+
+        margin: 15px auto;
+
+        padding: 12px 5px;
+
+        border-width: 2px;
+
+        border-radius: 30px;
+
+        font-size: 14px;
+    }
+
+    nav a {
+        display: inline-block;
+
+        margin: 5px 7px;
+    }
+
+
+    /* ----------------------------- */
+    /* MAIN                          */
+    /* ----------------------------- */
+
+    main {
+        width: calc(100% - 20px);
+
+        max-width: none;
+    }
+
+
+    /* ----------------------------- */
+    /* SECTIONS                      */
+    /* ----------------------------- */
+
+    section {
+        margin: 20px 0;
+
+        padding: 20px 12px;
+
+        border-width: 2px;
+
+        border-radius: 35px;
+
+        box-shadow: 3px 3px 0px #112944;
+    }
+
+    section h2 {
+        font-size: 23px;
+
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    section > p {
+        font-size: 14px;
+
+        line-height: 1.5;
+
+        padding: 0 8px;
+    }
+
+
+    /* ----------------------------- */
+    /* PERSON CARDS                  */
+    /* ----------------------------- */
+
+    .person {
+        margin: 18px 0;
+
+        padding: 18px 12px;
+
+        border-radius: 30px;
+
+        border-width: 2px;
+
+        box-shadow: 2px 2px 0px #091b31;
+    }
+
+    .person h3 {
+        font-size: 20px;
+
+        margin: 12px 0;
+    }
+
+    .person p {
+        font-size: 14px;
+
+        line-height: 1.6;
+
+        margin: 12px 4px;
+    }
+
+
+    /* ----------------------------- */
+    /* PROFILE PICTURES              */
+    /* ----------------------------- */
+
+    .profile-picture {
+        width: 125px;
+        height: 125px;
+
+        border-width: 4px;
+
+        padding: 4px;
+    }
+
+
+    /* ----------------------------- */
+    /* HOBBIES                       */
+    /* ----------------------------- */
+
+    .hobby-list {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    .hobby {
+        width: 100%;
+
+        padding: 18px;
+
+        border-radius: 30px;
+
+        box-shadow: 2px 2px 0px #b7c9df;
+    }
+
+    .hobby h3 {
+        font-size: 19px;
+    }
+
+    .hobby ul {
+        font-size: 14px;
+
+        line-height: 1.9;
+
+        padding-left: 25px;
+    }
+
+    .hobby-image {
+        width: 75px;
+        height: 75px;
+    }
+
+
+    /* ----------------------------- */
+    /* MESSAGE BOX                   */
+    /* ----------------------------- */
+
+    .message-box {
+        width: calc(100% - 10px);
+
+        margin: 25px auto;
+
+        padding: 20px 12px;
+
+        border-radius: 35px;
+
+        border-width: 2px;
+
+        box-shadow: 3px 3px 0px #6b8db5;
+    }
+
+    .message-box h2 {
+        font-size: 21px;
+    }
+
+    .message-box p {
+        font-size: 14px;
+    }
+
+
+    /* ----------------------------- */
+    /* FOOTER                        */
+    /* ----------------------------- */
+
+    footer {
+        width: calc(100% - 30px);
+
+        margin: 25px auto 15px;
+
+        padding: 18px 10px;
+
+        border-radius: 35px;
+
+        border-width: 2px;
+
+        box-shadow: 3px 3px 0px #6b8db5;
+    }
+
+    footer p {
+        font-size: 13px;
+
+        line-height: 1.6;
+
+        margin: 8px 0;
+    }
+
+    footer a {
+        display: inline-block;
+
+        margin: 3px 0;
+    }
+}
+
+
+/* ================================================= */
+/* SMALL PHONES                                    */
+/* iPhone SE / small Android phones                */
+/* ================================================= */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-size: 14px;
+    }
+
+    /* Hide side decorations on phones */
+    .sticker1,
+    .sticker2,
+    .sticker3 {
+        display: none;
+    }
+
+    /* HEADER */
+    header {
+        width: 90%;
+        margin: 15px auto;
+        padding: 15px 10px;
+        border-radius: 30px;
+        border-width: 2px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        line-height: 1.2;
+        margin: 8px 0;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .header-decoration {
+        width: 55px;
+        height: 55px;
+    }
+
+    /* NAVIGATION */
+    nav {
+        width: 88%;
+        margin: 15px auto;
+        padding: 10px 5px;
+        border-radius: 25px;
+        border-width: 2px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    /* MAIN */
+    main {
+        width: 94%;
+        margin: auto;
+    }
+
+    /* SECTIONS */
+    section {
+        width: 100%;
+        margin: 20px 0;
+        padding: 18px 10px;
+        border-radius: 30px;
+        border-width: 2px;
+        box-shadow: 3px 3px 0px #112944;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    section > p {
+        font-size: 14px;
+    }
+
+    /* PERSON */
+    .person {
+        width: 100%;
+        margin: 18px 0;
+        padding: 18px 10px;
+        border-radius: 25px;
+    }
+
+    .person h3 {
+        font-size: 20px;
+    }
+
+    .person p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 10px 3px;
+    }
+
+    /* PROFILE IMAGE */
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+        border-width: 4px;
+    }
+
+    /* HOBBIES */
+    .hobby-list {
+        display: block;
+    }
+
+    .hobby {
+        width: 100%;
+        margin: 15px 0;
+        padding: 18px;
+        border-radius: 25px;
+    }
+
+    .hobby h3 {
+        font-size: 19px;
+    }
+
+    .hobby ul {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .hobby-image {
+        width: 75px;
+        height: 75px;
+    }
+
+    /* MESSAGE */
+    .message-box {
+        width: 90%;
+        margin: 25px auto;
+        padding: 20px 10px;
+        border-radius: 30px;
+    }
+
+    .message-box h2 {
+        font-size: 21px;
+    }
+
+    .message-box p {
+        font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer {
+        width: 90%;
+        margin: 25px auto 15px;
+        padding: 18px 10px;
+        border-radius: 30px;
+    }
+
+    footer p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    footer a {
+        display: inline-block;
+        margin: 3px;
+    }
+}
