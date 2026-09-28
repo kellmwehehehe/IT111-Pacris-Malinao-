@@ -21,11 +21,8 @@ body {
     text-align: center;
 
     position: relative;
-
-   
     overflow-x: hidden;
 }
-
 
 .sticker {
     position: absolute;
@@ -61,7 +58,6 @@ body {
 
     object-fit: contain;
 }
-
 
 header {
     background-color: rgba(255, 255, 255, 0.75);
@@ -131,7 +127,6 @@ nav a:hover {
     color: #174a7e;
 }
 
-
 main {
     width: 80%;
     max-width: 800px;
@@ -141,7 +136,6 @@ main {
     position: relative;
     z-index: 2;
 }
-
 
 
 section {
@@ -161,7 +155,6 @@ section h2 {
     color: #0b2d5c;
     margin-bottom: 20px;
 }
-
 
 .person {
     background-color: rgba(220, 233, 247, 0.75);
@@ -265,6 +258,7 @@ section h2 {
     color: #0b2d5c;
 }
 
+
 footer {
     background-color: rgba(255, 255, 255, 0.3);
 
@@ -292,275 +286,21 @@ footer a {
     font-weight: bold;
 }
 
-@media (max-width: 900px) {
-
-    header {
-        width: 85%;
-    }
-
-    nav {
-        width: 85%;
-    }
-
-    main {
-        width: 90%;
-    }
-
-    section {
-        padding: 25px;
-    }
-
-    .sticker1 {
-        width: 130px;
-        height: 130px;
-    }
-
-    .sticker2 {
-        width: 220px;
-        height: 110px;
-    }
-
-    .sticker3 {
-        width: 160px;
-        height: 160px;
-    }
-}
-
-
+/*mobile version*/
 @media (max-width: 600px) {
 
     html,
     body {
         width: 100%;
-        overflow-x: hidden;
-    }
-
-
-    .sticker {
-        display: none;
-    }
-
-
-    header {
-        width: calc(100% - 30px);
-
-        margin: 15px auto;
-
-        padding: 18px 15px;
-
-        border-width: 2px;
-
-        border-radius: 35px;
-
-        box-shadow: 3px 3px 0px #6b8db5;
-    }
-
-    header h1 {
-        font-size: 25px;
-
-        margin: 8px 0;
-
-        line-height: 1.2;
-    }
-
-    header p {
-        font-size: 14px;
-    }
-
-    .header-decoration {
-        width: 55px;
-        height: 55px;
-    }
-
-
-    nav {
-        width: calc(100% - 30px);
-
-        margin: 15px auto;
-
-        padding: 12px 5px;
-
-        border-width: 2px;
-
-        border-radius: 30px;
-
-        font-size: 14px;
-    }
-
-    nav a {
-        display: inline-block;
-
-        margin: 5px 7px;
-    }
-
-
-
-    main {
-        width: calc(100% - 20px);
-
-        max-width: none;
-    }
-
-
-    section {
-        margin: 20px 0;
-
-        padding: 20px 12px;
-
-        border-width: 2px;
-
-        border-radius: 35px;
-
-        box-shadow: 3px 3px 0px #112944;
-    }
-
-    section h2 {
-        font-size: 23px;
-
-        margin-top: 5px;
-        margin-bottom: 15px;
-    }
-
-    section > p {
-        font-size: 14px;
-
-        line-height: 1.5;
-
-        padding: 0 8px;
-    }
-
-    .person {
-        margin: 18px 0;
-
-        padding: 18px 12px;
-
-        border-radius: 30px;
-
-        border-width: 2px;
-
-        box-shadow: 2px 2px 0px #091b31;
-    }
-
-    .person h3 {
-        font-size: 20px;
-
-        margin: 12px 0;
-    }
-
-    .person p {
-        font-size: 14px;
-
-        line-height: 1.6;
-
-        margin: 12px 4px;
-    }
-
-
-    .profile-picture {
-        width: 125px;
-        height: 125px;
-
-        border-width: 4px;
-
-        padding: 4px;
-    }
-
-
-    .hobby-list {
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 15px;
-    }
-
-    .hobby {
-        width: 100%;
-
-        padding: 18px;
-
-        border-radius: 30px;
-
-        box-shadow: 2px 2px 0px #b7c9df;
-    }
-
-    .hobby h3 {
-        font-size: 19px;
-    }
-
-    .hobby ul {
-        font-size: 14px;
-
-        line-height: 1.9;
-
-        padding-left: 25px;
-    }
-
-    .hobby-image {
-        width: 75px;
-        height: 75px;
-    }
-
-    .message-box {
-        width: calc(100% - 10px);
-
-        margin: 25px auto;
-
-        padding: 20px 12px;
-
-        border-radius: 35px;
-
-        border-width: 2px;
-
-        box-shadow: 3px 3px 0px #6b8db5;
-    }
-
-    .message-box h2 {
-        font-size: 21px;
-    }
-
-    .message-box p {
-        font-size: 14px;
-    }
-
-    footer {
-        width: calc(100% - 30px);
-
-        margin: 25px auto 15px;
-
-        padding: 18px 10px;
-
-        border-radius: 35px;
-
-        border-width: 2px;
-
-        box-shadow: 3px 3px 0px #6b8db5;
-    }
-
-    footer p {
-        font-size: 13px;
-
-        line-height: 1.6;
-
-        margin: 8px 0;
-    }
-
-    footer a {
-        display: inline-block;
-
-        margin: 3px 0;
-    }
-}
-
-@media screen and (max-width: 600px) {
-
-    body {
-        width: 100%;
         margin: 0;
         padding: 0;
         overflow-x: hidden;
+    }
+
+    body {
         font-size: 14px;
     }
+
 
     .sticker1,
     .sticker2,
@@ -572,8 +312,11 @@ footer a {
         width: 90%;
         margin: 15px auto;
         padding: 15px 10px;
-        border-radius: 30px;
+
         border-width: 2px;
+        border-radius: 30px;
+
+        box-shadow: 3px 3px 0px #6b8db5;
     }
 
     header h1 {
@@ -595,60 +338,84 @@ footer a {
         width: 88%;
         margin: 15px auto;
         padding: 10px 5px;
-        border-radius: 25px;
+
         border-width: 2px;
+        border-radius: 25px;
+
+        font-size: 14px;
     }
 
     nav a {
+        display: inline-block;
         font-size: 14px;
         margin: 5px;
     }
 
+
+
     main {
         width: 94%;
+        max-width: none;
         margin: auto;
     }
 
-    
     section {
         width: 100%;
         margin: 20px 0;
         padding: 18px 10px;
-        border-radius: 30px;
+
         border-width: 2px;
+        border-radius: 30px;
+
         box-shadow: 3px 3px 0px #112944;
     }
 
     section h2 {
         font-size: 22px;
+
+        margin-top: 5px;
+        margin-bottom: 15px;
     }
 
     section > p {
         font-size: 14px;
+        line-height: 1.5;
+
+        padding: 0 8px;
     }
 
     .person {
         width: 100%;
         margin: 18px 0;
         padding: 18px 10px;
+
+        border-width: 2px;
         border-radius: 25px;
+
+        box-shadow: 2px 2px 0px #091b31;
     }
 
     .person h3 {
         font-size: 20px;
+        margin: 12px 0;
     }
 
     .person p {
         font-size: 14px;
         line-height: 1.6;
+
         margin: 10px 3px;
     }
+
 
     .profile-picture {
         width: 120px;
         height: 120px;
+
         border-width: 4px;
+        padding: 4px;
     }
+
 
     .hobby-list {
         display: block;
@@ -656,9 +423,13 @@ footer a {
 
     .hobby {
         width: 100%;
+
         margin: 15px 0;
         padding: 18px;
+
         border-radius: 25px;
+
+        box-shadow: 2px 2px 0px #b7c9df;
     }
 
     .hobby h3 {
@@ -668,6 +439,8 @@ footer a {
     .hobby ul {
         font-size: 14px;
         line-height: 1.8;
+
+        padding-left: 25px;
     }
 
     .hobby-image {
@@ -677,9 +450,14 @@ footer a {
 
     .message-box {
         width: 90%;
+
         margin: 25px auto;
         padding: 20px 10px;
+
+        border-width: 2px;
         border-radius: 30px;
+
+        box-shadow: 3px 3px 0px #6b8db5;
     }
 
     .message-box h2 {
@@ -692,14 +470,21 @@ footer a {
 
     footer {
         width: 90%;
+
         margin: 25px auto 15px;
         padding: 18px 10px;
+
+        border-width: 2px;
         border-radius: 30px;
+
+        box-shadow: 3px 3px 0px #6b8db5;
     }
 
     footer p {
         font-size: 13px;
         line-height: 1.6;
+
+        margin: 8px 0;
     }
 
     footer a {
